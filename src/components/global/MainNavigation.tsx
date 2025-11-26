@@ -21,8 +21,8 @@ export default function MainNavigation() {
 
     return (
         <>
-            <div className="sticky top-0 z-50 bg-primary shadow-md w-full max-w-7xl mx-auto px-4 py-2">
-                <div className="flex items-center justify-between">
+            <div className="sticky top-0 z-50 bg-primary shadow-md w-full px-4 py-2">
+                <div className="flex items-center justify-between max-w-7xl mx-auto">
                     <Link href="/" className="flex items-center space-x-2 text-2xl font-medium font-heading">
                         <EMDLogo className="h-10 w-auto emd-gold" />
                         <span className="text-priority pt-1">Eric M. Dullavin</span>
