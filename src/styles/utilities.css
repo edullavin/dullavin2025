@@ -1,0 +1,28 @@
+/**
+ * Custom utility classes
+ * Add reusable utility classes here
+ */
+
+/* Spacing utilities */
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Typography utilities */
+.heading-primary {
+  @apply text-4xl md:text-5xl lg:text-6xl font-heading font-bold;
+}
+
+.heading-secondary {
+  @apply text-3xl md:text-4xl font-heading font-semibold;
+}
+
+.text-body {
+  @apply text-base md:text-lg leading-relaxed;
+}
+
+/* Add your utility classes below */

@@ -1,0 +1,40 @@
+/**
+ * Component-specific styles
+ * Add custom styles for specific components here
+ */
+
+/* Example: Custom button styles */
+.btn-custom {
+  @apply px-4 py-2 rounded-lg transition-all;
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+}
+
+.btn-custom:hover {
+  @apply shadow-lg;
+  transform: translateY(-2px);
+}
+
+/* Add your component styles below */
+.pathOptions {
+    position: relative;
+    cursor: pointer;
+}
+/* Make images black & white by default on md+; small screens stay colored */
+.pathOptions img {
+  filter: none;
+}
+
+@media (min-width: 768px) {
+  .pathOptions img {
+    filter: grayscale(100%);
+    transition: filter 300ms ease, transform 300ms ease;
+  }
+  .pathOptions img:hover {
+    filter: grayscale(0%);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pathOptions img {
+      transition: none;
+    }
+  }
+}
