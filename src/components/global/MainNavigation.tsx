@@ -25,7 +25,7 @@ export default function MainNavigation() {
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2 text-2xl font-medium font-heading">
                         <EMDLogo className="h-10 w-auto emd-gold" />
-                        <span className="pt-1">Eric M. Dullavin</span>
+                        <span className="text-priority pt-1">Eric M. Dullavin</span>
                     </Link>
                     <div className="hidden md:block">
                         <NavigationMenu>
