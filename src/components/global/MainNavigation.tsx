@@ -4,13 +4,9 @@ import Link from "next/link"
 import { useState } from "react"
 import {
     NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 import EMDLogo from "@/components/global/emd_logo.svg"
 

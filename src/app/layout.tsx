@@ -37,7 +37,7 @@ export default function RootLayout({
         className={`${roboto.variable} ${questrial.variable} ${geistMono.variable} antialiased relative`}
       >
         <MainNavigation />
-        {children}
+        <main className="min-h-svh">{children}</main>
         <Footer />
       </body>
     </html>

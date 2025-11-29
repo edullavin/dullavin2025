@@ -20,15 +20,18 @@ export default function Home() {
   return (
     <PageTransition>
       <div className="flex min-h-screen p-4">
-        <div className="pathOptions flex h-auto md:h-[80vh] m-auto rounded-3xl overflow-hidden bg-white">
+        <motion.div
+          className="pathOptions flex h-auto md:h-[80vh] m-auto rounded-3xl overflow-hidden bg-white"
+          animate={{ opacity: clicked ? 0 : 1 }}
+          transition={{ delay: 0.6, duration: 0.50, ease: "easeOut" }}
+        >
 
           <motion.div 
             className="pathOption cursor-pointer"
             animate={{
-              x: clicked ? -400 : 0, // Move immediately
-              opacity: clicked ? [1, 1, 0] : 1, // Stay at 1 for first 50%, then fade to 0
+              transform: clicked ? "translateX(-100%)" : "translateX(0%)",
             }}
-            transition={{ duration: 0.6, ease: "easeInOut", times: [0, 0.5, 1] }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
           >
             <div onClick={() => handleClick("pro", "/pro")}>
               <img src="/path-pro.png" alt="" className="w-auto h-full" />
@@ -40,10 +43,9 @@ export default function Home() {
           <motion.div 
             className="pathOption cursor-pointer"
             animate={{
-              x: clicked ? 400 : 0, // Move immediately
-              opacity: clicked ? [1, 1, 0] : 1, // Stay at 1 for first 50%, then fade to 0
+              transform: clicked ? "translateX(100%)" : "translateX(0%)",
             }}
-            transition={{ duration: 0.6, ease: "easeInOut", times: [0, 0.5, 1] }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
           >
             <div onClick={() => handleClick("work", "/work")}>
               <img src="/path-work.png" alt="" className="w-auto h-full" />
@@ -51,7 +53,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-        </div>
+        </motion.div>
       </div>
     </PageTransition>
   );
