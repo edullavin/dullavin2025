@@ -1,6 +1,6 @@
 import PageTransition from "@/components/global/PageTransition";
 import ProjectCard from "@/components/pro/ProjectCard";
-import { projects } from "@/app/pro/projects";
+import { projects } from "@/app/work/projects";
 
 export default function Pro() {
   return (
@@ -11,7 +11,7 @@ export default function Pro() {
           <div className="mb-8 flex items-center justify-between gap-6">
             <div>
               <h1 className="text-priority font-heading text-4xl md:text-5xl">Product Design Portfolio</h1>
-              <p className="mt-3 max-w-2xl text-neutral-300">
+              <p className="mt-3 max-w-2xl text-neutral-700 dark:text-neutral-300">
                 Selected work across product strategy, UX, and interaction design.
                 Exploring outcomes, constraints, and the craft behind the solutions.
               </p>
